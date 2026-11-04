@@ -1649,11 +1649,11 @@
           </div>
         </div>
         <div class="admin-list" id="adminList"></div>
-        <div style="margin-top:24px;padding:14px;background:#fff8e1;border-radius:8px;font-size:13px;color:#666">
-          <strong>📌 Como atualizar o site para todo mundo:</strong><br>
-          1. Clique em <strong>"Baixar produtos.json"</strong><br>
-          2. No GitHub, vá na pasta do site e substitua o arquivo <code>produtos.json</code><br>
-          3. Faça o commit. Em 1–2 minutos o site atualiza para todos.
+        <div style="margin-top:24px;padding:14px;background:#fff8e1;border-radius:8px;font-size:13px;color:#666;line-height:1.5">
+          <strong>📌 Importante — como o cliente vê a mudança:</strong><br>
+          Ao adicionar, editar ou excluir, o arquivo <code>produtos.json</code> é baixado automaticamente.<br>
+          Você precisa <strong>substituir esse arquivo no GitHub</strong> e salvar (Commit).<br>
+          Só depois disso a loja atualiza no celular de todo mundo (1–2 min).
         </div>
       `;
       renderAdminList();
@@ -1757,15 +1757,15 @@
       if (editingId) {
         const idx = produtos.findIndex(x => x.id === editingId);
         if (idx !== -1) produtos[idx] = { ...produtos[idx], ...data };
-        showToast('Produto atualizado!');
       } else {
         const newId = produtos.length ? Math.max(...produtos.map(p => p.id)) + 1 : 1;
         produtos.push({ id: newId, ...data });
-        showToast('Produto adicionado!');
       }
       hideForm();
       renderAdminList();
       renderProducts();
+      // Baixa automaticamente e explica como publicar para todos
+      downloadJSON(true);
     }
 
     function deleteProduct(id) {
@@ -1773,10 +1773,10 @@
       produtos = produtos.filter(p => p.id !== id);
       renderAdminList();
       renderProducts();
-      showToast('Produto removido');
+      downloadJSON(true);
     }
 
-    function downloadJSON() {
+    function downloadJSON(fromSave) {
       const blob = new Blob([JSON.stringify(produtos, null, 2)], { type: 'application/json' });
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
@@ -1784,7 +1784,24 @@
       a.download = 'produtos.json';
       a.click();
       URL.revokeObjectURL(url);
-      showToast('Arquivo baixado! Agora substitua no GitHub.');
+
+      if (fromSave) {
+        showToast('Arquivo baixado! Suba no GitHub para todos verem.');
+        setTimeout(() => {
+          alert(
+            '✅ Alteração salva no seu aparelho!\n\n' +
+            'Para aparecer no celular do cliente:\n\n' +
+            '1. O arquivo produtos.json já foi baixado\n' +
+            '2. Abra o GitHub no computador\n' +
+            '3. Substitua o produtos.json antigo pelo novo\n' +
+            '4. Clique em Commit / Save\n\n' +
+            'Em 1–2 minutos a loja atualiza para todo mundo.\n\n' +
+            '⚠️ Sem esse passo, só você vê a mudança.'
+          );
+        }, 400);
+      } else {
+        showToast('Arquivo baixado! Agora substitua no GitHub.');
+      }
     }
 
     loadProdutos();
