@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Mini Mercado | Ofertas com Frete Grátis</title>
+  <title>Afiliado Livre | Ofertas com Frete Grátis</title>
   <meta name="description" content="Ofertas selecionadas com frete grátis. Compra segura pelo Mercado Livre. Receba em casa com proteção ao comprador." />
   <meta name="theme-color" content="#FFE600" />
   <!-- Open Graph (quando compartilha no Instagram/WhatsApp/TikTok) -->
-  <meta property="og:title" content="Mini Mercado | Ofertas com Frete Grátis" />
+  <meta property="og:title" content="Afiliado Livre | Ofertas com Frete Grátis" />
   <meta property="og:description" content="Ofertas selecionadas. Compra 100% pelo Mercado Livre, com frete grátis e proteção ao comprador." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&h=630&fit=crop" />
+  <meta property="og:image" content="banner-afiliado.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23FFE600' width='100' height='100' rx='20'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='%232D3277' font-family='sans-serif' font-weight='bold'>M</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23FFE600' width='100' height='100' rx='20'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='%232D3277' font-family='sans-serif' font-weight='bold'>A</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -58,30 +58,25 @@
     .logo {
       display: flex;
       align-items: center;
-      gap: 6px;
       flex-shrink: 0;
       cursor: pointer;
       user-select: none;
     }
-    .logo-icon {
-      width: 36px;
+    .logo img {
       height: 36px;
-      background: #2D3277;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-weight: 700;
-      font-size: 14px;
+      width: auto;
+      max-width: 140px;
+      object-fit: contain;
+      border-radius: 6px;
+      display: block;
+      background: #FFE600;
     }
-    .logo-text {
-      font-weight: 700;
-      font-size: 18px;
-      color: #2D3277;
-      display: none;
+    @media (min-width: 480px) {
+      .logo img {
+        height: 42px;
+        max-width: 180px;
+      }
     }
-    @media (min-width: 480px) { .logo-text { display: block; } }
 
     .search-box { flex: 1; position: relative; }
     .search-box input {
@@ -226,6 +221,28 @@
       position: absolute;
       inset: 0;
       background: linear-gradient(90deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.25) 100%);
+    }
+    .carousel-slide.banner-slide {
+      padding: 0;
+      min-height: 0;
+      aspect-ratio: 16 / 9;
+      max-height: 320px;
+    }
+    .carousel-slide.banner-slide::before {
+      display: none;
+    }
+    .carousel-slide.banner-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+    @media (max-width: 480px) {
+      .carousel-slide.banner-slide {
+        aspect-ratio: 16 / 10;
+        max-height: 220px;
+      }
     }
     .slide-content {
       position: relative;
@@ -969,9 +986,8 @@
 
   <header class="header">
     <div class="header-top">
-      <div class="logo" id="logoBtn">
-        <div class="logo-icon">MM</div>
-        <span class="logo-text">Mini Mercado</span>
+      <div class="logo" id="logoBtn" title="Afiliado Livre">
+        <img src="banner-afiliado.jpg" alt="Afiliado Livre" />
       </div>
       <div class="search-box">
         <input type="text" id="searchInput" placeholder="Estou buscando..." autocomplete="off" />
@@ -987,13 +1003,9 @@
   <!-- CARROSSEL DE ANÚNCIOS -->
   <section class="carousel" id="carousel">
     <div class="carousel-track" id="carouselTrack">
-      <div class="carousel-slide" style="background-image:url('https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=900&h=400&fit=crop')">
-        <div class="slide-content">
-          <div class="slide-badge">Oferta do dia</div>
-          <div class="slide-title">Cupons de até R$ 150 OFF</div>
-          <div class="slide-sub">Aproveite agora · Frete grátis</div>
-          <button class="slide-cta" onclick="document.getElementById('produtos').scrollIntoView({behavior:'smooth'})">Ver ofertas</button>
-        </div>
+      <!-- Banner principal Afiliado Livre -->
+      <div class="carousel-slide banner-slide" onclick="document.getElementById('produtos').scrollIntoView({behavior:'smooth'})" style="cursor:pointer">
+        <img src="banner-afiliado.jpg" alt="Afiliado Livre - Encontre os melhores produtos" />
       </div>
       <div class="carousel-slide" style="background-image:url('https://images.unsplash.com/photo-1555529902-5261145633bf?w=900&h=400&fit=crop')">
         <div class="slide-content">
@@ -1188,10 +1200,10 @@
     <div class="footer-social">
       <a href="https://instagram.com/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram">📸</a>
       <a href="https://www.tiktok.com/" target="_blank" rel="noopener" title="TikTok" aria-label="TikTok">🎵</a>
-      <a href="https://wa.me/5594984271249?text=Oi!%20Vim%20pelo%20Mini%20Mercado" target="_blank" rel="noopener" title="WhatsApp" aria-label="WhatsApp">💬</a>
+      <a href="https://wa.me/5511999999999?text=Oi!%20Vim%20pelo%20Afiliado%20Livre" target="_blank" rel="noopener" title="WhatsApp" aria-label="WhatsApp">💬</a>
     </div>
     <p class="footer-text">
-      Mini Mercado — Ofertas selecionadas com frete grátis.<br>
+      Afiliado Livre — Ofertas selecionadas com frete grátis.<br>
       Os produtos são vendidos e entregues pelos vendedores do Mercado Livre.
     </p>
     <p class="footer-disclaimer">
@@ -1201,7 +1213,7 @@
 
   <!-- WhatsApp flutuante — TROQUE O NÚMERO -->
   <a class="whatsapp-float"
-     href="https://wa.me/5594984271249?text=Oi!%20Vim%20pelo%20site%20Mini%20Mercado%20e%20quero%20saber%20mais"
+     href="https://wa.me/5511999999999?text=Oi!%20Vim%20pelo%20site%20Afiliado%20Livre%20e%20quero%20saber%20mais"
      target="_blank"
      rel="noopener"
      aria-label="Falar no WhatsApp"
