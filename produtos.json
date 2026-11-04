@@ -76,48 +76,6 @@
     ]
   },
   {
-    "id": 3,
-    "titulo": "Suporte Celular Garra Aranha para Moto e Bike11111",
-    "preco": 30.9,
-    "precoAntigo": 59.9,
-    "desconto": 48,
-    "imagem": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=600&h=600&fit=crop",
-    "imagens": [
-      "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=600&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=800&fit=crop"
-    ],
-    "frete": true,
-    "vendidos": "2500+",
-    "categoria": "eletronicos",
-    "link": "https://www.mercadolivre.com.br/",
-    "descricao": "Suporte de celular tipo garra aranha, ideal para moto, bike e até no carro. Fixação firme e segura, ajustável para diversos tamanhos de smartphones. Material resistente a vibração e intempéries. Rotação 360° para melhor visualização do GPS.",
-    "avaliacoes": [
-      {
-        "nome": "Pedro H.",
-        "nota": 5,
-        "texto": "Uso todo dia na moto e não cai nunca. Melhor custo-benefício que já comprei.",
-        "foto": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=300&h=300&fit=crop",
-        "data": "12/10/2025"
-      },
-      {
-        "nome": "Lucas T.",
-        "nota": 5,
-        "texto": "Chegou rápido e funciona perfeitamente. Recomendo!",
-        "foto": null,
-        "data": "01/11/2025"
-      },
-      {
-        "nome": "Marina G.",
-        "nota": 4,
-        "texto": "Bom produto, segura bem o celular. Só a instalação no guidão que é um pouco trabalhosa.",
-        "foto": null,
-        "data": "25/09/2025"
-      }
-    ]
-  },
-  {
     "id": 4,
     "titulo": "Kit 2 Espelhos Orgânicos Irregulares Parede",
     "preco": 129.9,
