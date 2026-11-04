@@ -2,8 +2,8 @@
   {
     "id": 1,
     "titulo": "Espelho Oval Decorativo 100x40cm Lapidado",
-    "preco": 85.90,
-    "precoAntigo": 199.80,
+    "preco": 85.9,
+    "precoAntigo": 199.8,
     "desconto": 57,
     "imagem": "https://images.unsplash.com/photo-1618220179428-22790b461013?w=600&h=600&fit=crop",
     "imagens": [
@@ -44,8 +44,8 @@
   {
     "id": 2,
     "titulo": "Espelho Corpo Inteiro 100x50cm Moldura Madeira",
-    "preco": 98.90,
-    "precoAntigo": 199.90,
+    "preco": 98.9,
+    "precoAntigo": 199.9,
     "desconto": 50,
     "imagem": "https://images.unsplash.com/photo-1615874959474-d609969a20ed?w=600&h=600&fit=crop",
     "imagens": [
@@ -77,12 +77,13 @@
   },
   {
     "id": 3,
-    "titulo": "Suporte Celular Garra Aranha para Moto e Bike",
-    "preco": 30.90,
-    "precoAntigo": 59.90,
+    "titulo": "Suporte Celular Garra Aranha para Moto e Bike1",
+    "preco": 30.9,
+    "precoAntigo": 59.9,
     "desconto": 48,
     "imagem": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=600&h=600&fit=crop",
     "imagens": [
+      "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=600&h=600&fit=crop",
       "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=800&h=800&fit=crop",
       "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800&h=800&fit=crop",
       "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=800&fit=crop"
@@ -119,8 +120,8 @@
   {
     "id": 4,
     "titulo": "Kit 2 Espelhos Orgânicos Irregulares Parede",
-    "preco": 129.90,
-    "precoAntigo": 249.90,
+    "preco": 129.9,
+    "precoAntigo": 249.9,
     "desconto": 48,
     "imagem": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&h=600&fit=crop",
     "imagens": [
@@ -153,8 +154,8 @@
   {
     "id": 5,
     "titulo": "Fone Bluetooth TWS com Cancelamento de Ruído",
-    "preco": 79.90,
-    "precoAntigo": 159.90,
+    "preco": 79.9,
+    "precoAntigo": 159.9,
     "desconto": 50,
     "imagem": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&h=600&fit=crop",
     "imagens": [
@@ -194,8 +195,8 @@
   {
     "id": 6,
     "titulo": "Organizador de Maquiagem Acrílico 3 Andares",
-    "preco": 49.90,
-    "precoAntigo": 89.90,
+    "preco": 49.9,
+    "precoAntigo": 89.9,
     "desconto": 44,
     "imagem": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&h=600&fit=crop",
     "imagens": [
@@ -228,8 +229,8 @@
   {
     "id": 7,
     "titulo": "Camiseta Oversized Algodão Premium Unissex",
-    "preco": 59.90,
-    "precoAntigo": 99.90,
+    "preco": 59.9,
+    "precoAntigo": 99.9,
     "desconto": 40,
     "imagem": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&h=600&fit=crop",
     "imagens": [
@@ -262,8 +263,8 @@
   {
     "id": 8,
     "titulo": "Luminária de Mesa LED Touch Dimmerável",
-    "preco": 69.90,
-    "precoAntigo": 129.90,
+    "preco": 69.9,
+    "precoAntigo": 129.9,
     "desconto": 46,
     "imagem": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=600&h=600&fit=crop",
     "imagens": [
